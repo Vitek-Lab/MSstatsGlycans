@@ -24,7 +24,7 @@ SkylinetoMSstatsGlycansFormat = function(
     MSstatsConvert::MSstatsSaveSessionInfo(session_info_path, append = TRUE)
 
     input = MSstatsConvert::MSstatsImport(list(input = input),
-                                          "MSstatsGlycans", "Skyline", ...)
+                                          "MSstats", "Skyline", ...)
     input = MSstatsConvert::MSstatsClean(input)
     input$IsotopeLabelType = "L"
     annotation = MSstatsConvert::MSstatsMakeAnnotation(input, NULL,
